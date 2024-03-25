@@ -1,0 +1,42 @@
+body {
+    margin: 10px;
+}
+
+nav {
+    text-align: center;        
+}
+
+nav a {
+    background-color:#ddd;
+    color: darkslateblue;
+    display: inline-block;
+    padding: 5px;
+    width: 70px;
+    text-decoration: none;
+}
+
+.next::after {
+    content: " »";
+}
+
+.prev::before {
+    content: "« "
+}
+
+.hello {
+    background-color: lavender;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.crimson {
+    color: crimson;
+}
+
+[href=""] {
+    color: #888;
+    pointer-events: none;
+}
