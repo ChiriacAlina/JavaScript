@@ -19,6 +19,8 @@ During the JavaScript course I learned about how to:
 
 • Add event handlers and timers
 
+Please check the Master Branch for examples. 
+
 • Use exceptions
 
 • Use promises
