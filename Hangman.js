@@ -15,10 +15,9 @@ function read(word) {
   return prompt(msg)
 };
 
-/*  TODO: 05. hangman game*/
+/*  Ex: 05. hangman game*/
 
 class Hangman {
-
   constructor(words) {
     this.collection = new WordsCollection(words);
   }

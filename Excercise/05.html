@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TODO 05</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<nav>
+			<a href="04.html" class="prev">Previous</a>
+			<a href="" class="next">Next</a>
+		</nav>
+
+		<h1>TODO 05</h1>
+
+		<template id="produs-template">
+			<div class="produs" data-index>
+				<figcaption class="nume"></figcaption>
+				<img class="img" src="" alt="" />
+				<figcaption class="pret"></figcaption>
+				<button>Add</button>
+			</div>
+		</template>
+
+		<h2 class="caption">Produse</h2>
+		<div class="sortare">
+			<label for="sortare">Sortare dupa:</label>
+
+			<select name="sortare" id="sortare">
+				<option value="nume">Nume</option>
+				<option value="pretAsc">Pret crescator</option>
+				<option value="pretDesc">Pret descrescator</option>
+			</select>
+		</div>
+
+		<div id="produse-container" class="produse"></div>
+
+		<h2 class="caption">Cos de cumparaturi</h2>
+
+		<div class="basket-head">
+			<div>Produs</div>
+			<div class="center">Cantitate</div>
+			<div class="right">Pret unitar</div>
+			<div class="right">Pret total</div>
+		</div>
+
+		<template id="basket-template">
+			<div class="nume"></div>
+			<div class="change center" data-index>
+				<button class="plus center">+</button>
+				<input class="cantitate center" type="text" />
+				<button class="minus center">-</button>
+				<button class="delete center">Sterge</button>
+			</div>
+			<div class="pret right"></div>
+			<div class="total right"></div>
+		</template>
+
+		<div id="basket-container" class="basket-body"></div>
+
+		<div class="basket-footer bold right">
+			<div class="left">Total cos</div>
+			<div id="total-cos"></div>
+		</div>
+
+		<script src="src/model.js"></script>
+		<script src="src/template.js"></script>
+		<script src="src/05.js"></script>
+	</body>
+</html>
